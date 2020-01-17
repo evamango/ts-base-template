@@ -1,5 +1,5 @@
 module.exports = function(api) {
-    api.cache(true);
+    api.cache(true)
     const presets = [
         // [
         //     '@babel/preset-env',
@@ -13,15 +13,12 @@ module.exports = function(api) {
             '@babel/env',
             {
                 corejs: '3',
-                useBuiltIns: 'usage',
-            },
+                useBuiltIns: 'usage'
+            }
         ],
-        '@babel/typescript',
-    ];
-    const plugins = [
-        '@babel/proposal-class-properties',
-        '@babel/proposal-object-rest-spread',
-    ];
+        '@babel/typescript'
+    ]
+    const plugins = ['@babel/proposal-class-properties', '@babel/proposal-object-rest-spread']
 
-    return { presets, plugins };
-};
+    return { presets, plugins }
+}
